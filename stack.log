@@ -1,0 +1,116 @@
+2016-11-13 10:38:46
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.101-b13 mixed mode):
+
+"Attach Listener" #15 daemon prio=9 os_prio=31 tid=0x00007fe591847800 nid=0x320b waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"DestroyJavaVM" #14 prio=5 os_prio=31 tid=0x00007fe59303d800 nid=0x1703 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"pool-1-thread-5" #13 prio=5 os_prio=31 tid=0x00007fe592849800 nid=0x5503 in Object.wait() [0x0000700001555000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007955f5ad8> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at java.lang.Object.wait(Object.java:502)
+	at test.concurrent.PhilosopherEatProblem$Chopstick.take(PhilosopherEatProblem.java:30)
+	- locked <0x00000007955f5ad8> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at test.concurrent.PhilosopherEatProblem$Philosopher.run(PhilosopherEatProblem.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"pool-1-thread-4" #12 prio=5 os_prio=31 tid=0x00007fe592040800 nid=0x5303 in Object.wait() [0x0000700001452000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007955f5c08> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at java.lang.Object.wait(Object.java:502)
+	at test.concurrent.PhilosopherEatProblem$Chopstick.take(PhilosopherEatProblem.java:30)
+	- locked <0x00000007955f5c08> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at test.concurrent.PhilosopherEatProblem$Philosopher.run(PhilosopherEatProblem.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"pool-1-thread-3" #11 prio=5 os_prio=31 tid=0x00007fe592805800 nid=0x5103 in Object.wait() [0x000070000134f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007955f5bd0> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at java.lang.Object.wait(Object.java:502)
+	at test.concurrent.PhilosopherEatProblem$Chopstick.take(PhilosopherEatProblem.java:30)
+	- locked <0x00000007955f5bd0> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at test.concurrent.PhilosopherEatProblem$Philosopher.run(PhilosopherEatProblem.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"pool-1-thread-2" #10 prio=5 os_prio=31 tid=0x00007fe59300a000 nid=0x4f03 in Object.wait() [0x000070000124c000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007955f5b98> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at java.lang.Object.wait(Object.java:502)
+	at test.concurrent.PhilosopherEatProblem$Chopstick.take(PhilosopherEatProblem.java:30)
+	- locked <0x00000007955f5b98> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at test.concurrent.PhilosopherEatProblem$Philosopher.run(PhilosopherEatProblem.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"pool-1-thread-1" #9 prio=5 os_prio=31 tid=0x00007fe591847000 nid=0x4d03 in Object.wait() [0x0000700001149000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007955f5b60> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at java.lang.Object.wait(Object.java:502)
+	at test.concurrent.PhilosopherEatProblem$Chopstick.take(PhilosopherEatProblem.java:30)
+	- locked <0x00000007955f5b60> (a test.concurrent.PhilosopherEatProblem$Chopstick)
+	at test.concurrent.PhilosopherEatProblem$Philosopher.run(PhilosopherEatProblem.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Service Thread" #8 daemon prio=9 os_prio=31 tid=0x00007fe591844000 nid=0x4903 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread2" #7 daemon prio=9 os_prio=31 tid=0x00007fe59202e800 nid=0x4703 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread1" #6 daemon prio=9 os_prio=31 tid=0x00007fe591841000 nid=0x4503 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #5 daemon prio=9 os_prio=31 tid=0x00007fe593004000 nid=0x4303 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007fe591839000 nid=0x360f runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007fe593006000 nid=0x3003 in Object.wait() [0x000070000092e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000795588ee0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x0000000795588ee0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+"Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007fe59203d800 nid=0x2e03 in Object.wait() [0x000070000082b000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000795586b50> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	- locked <0x0000000795586b50> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"VM Thread" os_prio=31 tid=0x00007fe591820800 nid=0x2c03 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007fe592811800 nid=0x2403 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=31 tid=0x00007fe592812000 nid=0x2603 runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=31 tid=0x00007fe592812800 nid=0x2803 runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=31 tid=0x00007fe592002000 nid=0x2a03 runnable 
+
+"VM Periodic Task Thread" os_prio=31 tid=0x00007fe593001000 nid=0x4b03 waiting on condition 
+
+JNI global references: 6
+
