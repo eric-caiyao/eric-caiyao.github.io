@@ -57,7 +57,7 @@ tags: [blog]
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_20.png)
 19. 硬盘分区，只有一块硬盘，只安装了这一个Linux，就选择Use entire drive吧
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_21.png)
-20. 确定写入
+20. 确定写入  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_22.png)
 21. 开始安装，这个过程是最耗时的
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_23.png)
