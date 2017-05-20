@@ -21,43 +21,42 @@ tags: [blog]
 2. 内存设置，既然是Linux安装图形界面就没有什么必要了，每个Linux发行版里都会有说明图形界面需要的内存最小值。这里设置为512会
 自动以Text Mode安装，具体该发行版(Oracle Linux6.5)的准确限制是多少我没有找到。
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_3.png)
-3. 硬盘设置
+3. 硬盘设置  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_4.png)
-4. 虚拟硬盘类型。 VDI： VirtualBox所属；VHD： 微软的；VMDK： 通常是Vmware的，这三种类型在VirtualBox的说明里有(具体
-可以在VirtualBox里点击帮助->内容->Virtual Storage->Disk image files查看)
+4. 虚拟硬盘类型。 VDI： VirtualBox所属；VHD： 微软的；VMDK： 通常是Vmware的，这三种类型在VirtualBox的说明里有(具体可以在VirtualBox里点击帮助->内容->Virtual Storage->Disk image files查看)  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_5.png)
-5. 设置硬盘文件位置
+5. 设置硬盘文件位置  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_6.png)
-6. 设置系统镜像
+6. 设置系统镜像  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_8.png)
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_9.png)
-7. 设置共享文件夹，为与宿主机共享数据所用
+7. 设置共享文件夹，为与宿主机共享数据所用  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_sharefolder.png)
-8. 启动
+8. 启动  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_10.png)
-9. 因为是通过镜像文件新安装，所以选择第二个Install system with basic video driver
+9. 因为是通过镜像文件新安装，所以选择第二个Install system with basic video driver  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_11.png)
-10. 磁盘测试，比较费时间，我一般不选
+10. 磁盘测试，比较费时间，我一般不选  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_12.png)
-11. 这个问题不影响安装，具体有什么后遗症我待再研究研究。。。 `TODO`
+11. 这个问题不影响安装，具体有什么后遗症我待再研究研究。。。 `TODO`  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_13.png)
-12. 一系列硬件检查完毕
+12. 一系列硬件检查完毕  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_14.png)
-13. 设置语言，中文就不需要了吧
+13. 设置语言，中文就不需要了吧  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_15.png)
-14. 键盘设置 US
+14. 键盘设置 US  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_16.png)
-15. 仍然是个未接之谜 ![](http://7xvn6m.com1.z0.glb.clouddn.com/blog-img3573956_132.gif) 相信我会更新的。。。
+15. 仍然是个未接之谜 ![](http://7xvn6m.com1.z0.glb.clouddn.com/blog-img3573956_132.gif) 相信我会更新的。。。  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_17.png)
-16. 选择时区，亚洲/上海
+16. 选择时区，亚洲/上海  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_18.png)
-17. 设置启动密码，也就是root密码
+17. 设置启动密码，也就是root密码  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_19.png)
-18. 因为我的密码设的太简单了，管他呢，反正测试用
+18. 因为我的密码设的太简单了，管他呢，反正测试用  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_20.png)
-19. 硬盘分区，只有一块硬盘，只安装了这一个Linux，就选择Use entire drive吧
+19. 硬盘分区，只有一块硬盘，只安装了这一个Linux，就选择Use entire drive吧  
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_21.png)
-20. 确定写入  
+20. 确定写入   
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_22.png)
 21. 开始安装，这个过程是最耗时的
 ![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_23.png)
