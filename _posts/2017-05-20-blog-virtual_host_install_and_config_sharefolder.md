@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "思考"
+title: "Mac VirtualBox Linux虚拟机安装及共享文件夹配置"
 description: ""
-category: 思考
+category: 技术分享
 tags: [blog]
 ---
 {% include JB/setup %}
