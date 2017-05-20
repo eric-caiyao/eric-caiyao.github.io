@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "思考"
+title: "Shell 工具脚本"
 description: ""
-category: 思考
+category: 技术分享
 tags: [blog]
 ---
 {% include JB/setup %}
