@@ -119,6 +119,31 @@ mount -t vboxsf sharefolder /media/
 重启以后会在media下重新生成一个sf_sharefolder，这个是因为当创建共享文件夹的时候选择
 了自动加载。至此共享文件夹也是OK的了，如果想把宿主机里的数据同步到虚拟机里就可以直接
 把文件复制到这个共享文件夹就行。
+32. 下面开始配置SSH，这样就不需要每次都要在虚拟机里操作了，直接在宿主机SSH连接上就可以，方便很多，第一步在VirtualBox里面设置网络为桥接，具体这几种网络连接方式的区别待下回分解
+![](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_network_select.png)
+33. 设置Linux虚拟机网络
+```shell
+# 查看宿主机IP
+ifconfig
+# 我的Mac宿主机IP为inet 192.168.1.3 netmask 0xffffff00 broadcast 192.168.1.255
+# 下面在虚拟机里操作
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
+DEVICE=eth0
+HWADDR=08:00:27:BF:6D:8F
+TYPE=Ethernet
+UUID=43d2dddb-f5c7-42a4-a275-2ac94ef15e30
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+IPADDR=192.168.1.4
+GATEWAY=192.168.1.1
+# 注意IPADDR要设置为和宿主机同一网段
+```
+34. 测试
+```shell
+# 宿主机中操作：
+ssh @root192.168.1.4
+```
 
 写完了，还有一些未解之谜![](http://7xvn6m.com1.z0.glb.clouddn.com/blog-img3573956_192.gif)这个后续会更新，好了先自我赞以下![](http://7xvn6m.com1.z0.glb.clouddn.com/blog-img3573956_201.gif)
