@@ -11,11 +11,11 @@ tags: [技术学习]
 
 ## Lock
 
-	java同步的实现方式5种：   
-		1. synchronized关键字  
-		2. Volatile关键字  
-		3. ReentrantLock可重入锁
-		4. ThreadLocal<>    
+> java同步的实现方式5种：   
+	1. synchronized关键字  
+	2. Volatile关键字  
+	3. ReentrantLock可重入锁
+	4. ThreadLocal<>    
 
 ### ReentrantLock
 
