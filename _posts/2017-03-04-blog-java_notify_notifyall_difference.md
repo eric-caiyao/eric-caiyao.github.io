@@ -16,9 +16,6 @@ tags: [blog]
 >著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  
 
 >今天正好碰到这个问题，也疑惑了好久。看了一圈知乎上的答案，感觉没说到根上。所以自己又好好Google了一下，终于找到了让自己信服的解释。 
-
-<!--break-->
-
 >先说两个概念：锁池和等待池锁池:  
 >1. 假设线程A已经拥有了某个对象(注意:不是类)的锁，而其它的线程想要调用这个对象的某个synchronized方法(或者synchronized块)，由于这些线程在进入对象的synchronized方法之前必须先获得该对象的锁的拥有权，但是该对象的锁目前正被线程A拥有，所以这些线程就进入了该对象的锁池中。  
 >2. 等待池:假设一个线程A调用了某个对象的wait()方法，线程A就会释放该对象的锁后，进入到了该对象的等待池中  
@@ -30,6 +27,8 @@ tags: [blog]
 Reference：[线程间协作：wait、notify、notifyAll](https://link.zhihu.com/?target=http%3A//wiki.jikexueyuan.com/project/java-concurrency/collaboration-between-threads.html)   
 >综上，所谓唤醒线程，另一种解释可以说是将线程由等待池移动到锁池，notifyAll调用后，会将全部线程由等待池移到锁池，然后参与锁的竞争，竞争成功则继续执行，如果不成功则留在锁池等待锁被释放后再次参与竞争。而notify只会唤醒一个线程。  
 > 有了这些理论基础，后面的notify可能会导致死锁，而notifyAll则不会的例子也就好解释了  
+
+<!--break-->
 
 ### 上面这个没有详细讲notify导致死锁的场景，下面引用stackoverflow的一个回答： 
 [Java: notify() vs. notifyAll() all over again](http://stackoverflow.com/questions/37026/java-notify-vs-notifyall-all-over-again)  
