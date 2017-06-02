@@ -12,6 +12,7 @@ JAVA实现生产者消费者有四种方式： 1. wait()/notifyAll();2.使用管
 
 <!--break-->
 
+
 	import java.util.concurrent.ExecutorService;
 	import java.util.concurrent.Executors;
 	import java.util.concurrent.LinkedBlockingQueue;
