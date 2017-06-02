@@ -21,7 +21,9 @@ tags: [技术学习]
 
 java.util.concurrent.locks.ReentrantLock.ReentrantLock(boolean fair)
 该类提供一个构造参数fair（是否公平）。 当设置为true时，当前获取锁的线程会再次获取锁（如果当前线程需要的话）。 当设置为false时，每一次锁被释放都会从等待队列里面找一个等待时间最久的线程来执行（链表头）。 以下测试代码会分别测试公平锁和非公平锁，在Runnable类的run方法里（一个线程里）会尝试多次获取锁。   
+
 <!--break-->
+
 	import java.util.concurrent.locks.Lock;
 	import java.util.concurrent.locks.ReentrantLock;
 
