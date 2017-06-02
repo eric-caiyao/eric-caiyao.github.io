@@ -9,6 +9,7 @@ tags: [技术学习]
 # javae线程经典问题仿真程序  
 ###生产者消费者问题：    
 JAVA实现生产者消费者有四种方式： 1. wait()/notifyAll();2.使用管道（PipeWriter/PipeReader）在线程间通信；4. 使用Exchanger构件在生产者和消费者之间交换共享数据；4. 使用阻塞队列；JAVA并发包里提供了很多BlockedQueue的实现，LinkedBlockedQueue可以实现无界队列和有界队列；ArrayBlockedQueue只能实现有界队列。以下代码实现制作土司过程的一个仿真程序，制作土司有三个步骤： 1. 制作土司； 2. 在原始土司上涂黄油； 3. 在涂过黄油的土司上涂果酱。  
+
 <!--break-->
 
 	import java.util.concurrent.ExecutorService;
