@@ -25,6 +25,7 @@ tags: [blog]
 
 	prime = null; // now Counter object is eligible for garbage collection but only be collected when JVM absolutely needs memory
  当执行到第三行将prime置为null时，垃圾回收器不会立即回收prime引用的对象，因为soft持有对该对象的软引用，只有当jvm需要内存空间时（内存不足）才会回收prime对象。软引用适合做cache或着pool
+<!--break-->
 #### 虚引用 (phantom reference)
 	
 虚引用与软引用和弱引用的一个区别在于：虚引用必须和引用队列（ReferenceQueue）联合使用。当垃圾回收器准备回收一个对象时，如果发现它还有虚引用，就会在回收对象的内存之前，把这个虚引用加入到与之关联的引用队列中，当用户代码再次从引用队列里取出虚引用对象时，gc才会执行引用对象的清理动作。虚引用最常见的用法是以某种可能比使用 Java 终结机制更灵活的方式来指派 pre-mortem 清除动作。

@@ -13,9 +13,9 @@ safe: false
 title : 䌨訞的博客
 tagline: Site Tagline
 author :
-  name : 䌨訞
-  email : henan_caiyao@163.com
-  github : henanCaiyao
+  name : 䌨訞的博客
+  email : eric_caiyao@163.com
+  github : eric-caiyao
   cnblog : http://www.cnblogs.com/caiyao/
   twitter : 
   feedburner : 
@@ -28,7 +28,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://caiyaoblog.me
+production_url : http://caiyao.info
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

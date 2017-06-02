@@ -10,6 +10,8 @@ tags: [blog]
 ### MySQL Explain 学习记录
 > MySQL 提供的explain命令是查看查询优化器如何决定执行查询的主要方法，只支持select语句的分析，对于非select语句可以进行近似转换再使用explain进行分析，分析结果只能用于参考，因为该命令不会真正执行整条SQL语句，而是使用静态统计信息(比如表数据行数、索引列表等)对执行计划进行近似分析。
 
+<!--break-->
+
 ###### EXPLAIN 分类
 1. EXPLAIN EXTENDED 使用该命令和 `show warnings` 可以查看MySQL优化器将原始SQL优化后的结果。
 2. EXPLAIN PARTITIONS 该命令查询将要访问的分区信息。

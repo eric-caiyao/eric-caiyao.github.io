@@ -14,6 +14,8 @@ tags: [blog]
 - [x] 相应版本Linux镜像文件(本文使用Oracle Linux6.5)
 - [x] VirtualBox 虚拟机增强包(VBoxGuestAdditions_5.1.6.iso)
 
+<!--break-->
+
 #### 安装步骤：
 1. 新建，设置虚机电脑名和系统类型
 ![新建，设置虚机电脑名和系统类型](http://7xvn6m.com1.z0.glb.clouddn.com/virtualhost_and_mysql_install_1.png)
