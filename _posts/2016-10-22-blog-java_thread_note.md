@@ -9,7 +9,7 @@ tags: [技术学习]
 # java多线程笔记
 
 
-##Lock
+## Lock
 
 	java同步的实现方式5种：   
 		1. synchronized关键字  
